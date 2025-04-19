@@ -20,12 +20,14 @@ server.tool("addTwoNumbers",
     },
     async (arg) =>{
         const{ a, b } = arg;
-        return [
+        return {
+          content: [
             {
                 type: "text",
                 text: `The sum of ${a} and ${b} is ${a + b}`
             }
-        ]
+          ]
+        }
     }
 )
 
